@@ -44,6 +44,7 @@ class TestTopHits(unittest.TestCase):
             "bias",
             "correction",
             "envelope_score",
+            "optimal_accuracy_score",
             "c_evalue",
             "i_evalue",
             "pvalue",

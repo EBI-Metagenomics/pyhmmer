@@ -1545,6 +1545,13 @@ cdef class Domain:
         return self._dom.envsc * libeasel.eslCONST_LOG2R
 
     @property
+    def optimal_accuracy_score(self):
+        """`float`: The optimal accuracy score.
+        """
+        assert self._dom != NULL
+        return self._dom.oasc
+
+    @property
     def c_evalue(self):
         """`float`: The conditional e-value for the domain.
         """
